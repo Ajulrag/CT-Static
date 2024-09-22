@@ -1671,6 +1671,7 @@ padding-bottom: 20px;
     padding-bottom: 75%; /* 4:3 aspect ratio */
     height: 0;
     overflow: hidden;
+    min-width: 318px; /* Set a minimum height for the map container */
   }
   
   .map-container iframe {

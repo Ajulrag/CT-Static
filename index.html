@@ -597,7 +597,27 @@
               });
             });
           </script>
+<script>
+  function resizeMap() {
+    var mapContainer = document.querySelector('.map-container');
+    var iframe = mapContainer.querySelector('iframe');
+    var aspectRatio = 0.75; // 4:3 aspect ratio
+    var containerWidth = mapContainer.offsetWidth;
+    var containerHeight = containerWidth * aspectRatio;
 
+    // Ensure the container height is at least the minimum height
+    containerHeight = Math.max(containerHeight, 300);
+
+    iframe.style.width = containerWidth + 'px';
+    iframe.style.height = containerHeight + 'px';
+  }
+
+  // Initial resize
+  resizeMap();
+
+  // Resize on window resize
+  window.addEventListener('resize', resizeMap);
+</script>
 
 </body>
 
