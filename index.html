@@ -66,18 +66,14 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#important">Subjects</a></li>
-                      <li><a href="#gallery">Gallery</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li class="dropdown">
-                          <a href="javascript:void(0)" class="dropbtn">Syllabus <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                          <div class="dropdown-content">
-                              <a href="syllabus.pdf" download="Syllabus_Revision_2021.pdf">Syllabus Revision 2021</a>
-                          </div>
-                      </li>
-                  </ul>
+                      <li> <a href="#home">Home</a> </li>
+                      <li> <a href="#about">About</a> </li>
+                      <li> <a href="#important">Subjects</a></li>
+                      <li> <a href="syllabus.pdf" download="Syllabus_Revision_2021.pdf">Syllabus</a></li>
+                      <li> <a href="#gallery">Gallery</a> </li>
+                      <li> <a href="#contact">Contact</a> </li>
+                      <li> <a href="#contact"></a> </li>
+                     </ul>
                    </nav>
                  </div>
                </div> 
@@ -624,28 +620,6 @@
   // Resize on window resize
   window.addEventListener('resize', resizeMap);
 </script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownContent = document.querySelector('.dropdown-content');
-
-    dropdown.addEventListener('click', function() {
-        if (dropdownContent.style.display === 'block') {
-            dropdownContent.style.display = 'none';
-        } else {
-            dropdownContent.style.display = 'block';
-        }
-    });
-
-    // Close the dropdown if the user clicks outside of it
-    window.addEventListener('click', function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            dropdownContent.style.display = 'none';
-        }
-    });
-});
-</script>
-
 
 </body>
 
